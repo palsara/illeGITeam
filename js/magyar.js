@@ -1,14 +1,14 @@
-function evaluation() {
-    var firstAnswer = document.querySelectorAll('INPUT[name=animal]');
+// function evaluation() {
+//     var firstAnswer = document.querySelectorAll('INPUT[name=animal]');
     // var secondAnswer = document.querySelectorAll('INPUT[name:award]');
     // var thirdAnswer = document.querySelectorAll('INPUT[name:common]');
     // var fourthAnswer = document.querySelectorAll('INPUT[name:whoWas]');
     // var fifthAnswer = document.querySelectorAll('INPUT[name:sit]');
 
-    for (var i = 0; i < firstAnswer.length; i++)
-        if (firstAnswer[i].checked == true) {
-            alert(firstAnswer[i].value);
-        }
+    // for (var i = 0; i < firstAnswer.length; i++)
+    //     if (firstAnswer[i].checked == true) {
+    //         alert(firstAnswer[i].value);
+    //     }
 
 
     // for (var i = 0; i < secondAnswer.length; i++)
@@ -38,4 +38,4 @@ function evaluation() {
     //     alert('Nagyon ügyes!');
     // }
 
-}
+// }

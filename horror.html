@@ -10,7 +10,7 @@
     <title>Horror filmek</title>
 </head>
 
-<body>
+<body onload="generator()">
     <div>
         <header>
             <h1>
@@ -232,7 +232,15 @@
             Mi a gonosz neved?
         </h2>
     </div>
-    Ide majd egy javascriptes névgenerátor jön.
+    <div id="placeholder"></div>
+    <br>
+    <div>
+        <input type="button"
+               name="nameGenerator"
+               value="Szörny akarok lenni"
+               onclick="generator()" />
+    </div>
+    <script src="/illeGITeam/js/name-generator.js"></script>
 </body>
 
 </html>

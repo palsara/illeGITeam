@@ -198,3 +198,37 @@ for (var i = 0; i < moviesQuestionIDs.length; i++) {
 // marcellus wallace section
 document.querySelector("#marcellusWallace").innerHTML =
   quizQuestions[4][0].question;
+
+// Mók
+for (var i = 1; i < quizQuestions.length - 1; i++) {
+  for (var j = 1; j < quizQuestions[i].length; i++) {
+    randomizeQuestionOrder(i, j);
+  }
+}
+
+function randomizeQuestionOrder(questionBlock, questionNumber) {
+  var labelID = "#";
+  console.log(labelID);
+  labelID = labelID + questionBlock + questionNumber;
+  console.log(labelID);
+  writeContent(questionBlock, questionNumber, labelID);
+}
+
+function writeContent(questionBlock, questionNumber, labelID) {
+  var keys = ["answer", "false1", "false2", "false3", "false4"];
+  while (keys.length > 0) {
+    var tmp = getRandomNumber(0, keys.length);
+    var index = tmp + 1;
+    console.log(keys[tmp]);
+    labelID = labelID + index;
+    console.log(labelID);
+    console.log(typeof labelID);
+    document.querySelector(labelID).innerHTML =
+      quizQuestions[questionBlock][questionNumber].keys[tmp];
+    keys.splice[tmp];
+  }
+}
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}

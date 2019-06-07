@@ -46,3 +46,8 @@
 .textcolorblack {
     color: #ff9966;
 }
+
+.imgblack {
+    max-width: 100%;
+    height: auto;
+}

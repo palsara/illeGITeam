@@ -12,9 +12,4 @@ function generator() {
     if (document.getElementById("result")) {
         document.getElementById("placeholder").removeChild(document.getElementById("result"));
     }
-
-    var element = document.createElement("div");
-    element.setAttribute("id", "result");
-    element.appendChild(document.createTextNode(fullName));
-    document.getElementById("placeholder").appendChild(element);
 }

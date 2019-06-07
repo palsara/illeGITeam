@@ -115,6 +115,7 @@
 .pzs {
     color: white;
     text-shadow: 0 0 15px black;
+    width: 85%;
 }
 
 body nav a {
@@ -124,6 +125,10 @@ body nav a {
     font-size: 25px;
 }
 
-body nav a: :hover {
-    color: #fff;
+body nav a :hover {
+    color: darkcyan;
+}
+
+body {
+    background-color: burlywood;
 }

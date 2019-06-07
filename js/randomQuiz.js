@@ -1,4 +1,12 @@
 var quizQuestions = [
+    // Pictures
+    [{
+        greeting = 'Introduction Quiz'
+        musicPic = '<img src="/img/music.jpg">',
+        sportsPic = '<img src="/img/sports.jpg">',
+        moviesPic = '<img src="/img/movies.jpg">',
+        doublePic = '<img src="/img/double.jpg">',
+    }],
     // First question block
     [{
             question = 'Hogy hívják a Pink Floyd eredeti énekesét?',

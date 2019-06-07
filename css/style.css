@@ -42,6 +42,9 @@
 .horrorBackground {
     background-image: url(../img/horrorforest.jpg);
     background-size: auto;
+}
+.zsBackground {
+    background-image: url(/img/sharknado.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -50,7 +53,10 @@
 }
 
 .headerTextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;}
+.h1zs {
+    color:white;
+    text-shadow: 0 0 15px black;
     font-size: 32pt;
     text-align: center;
 }
@@ -86,4 +92,24 @@
 
 .magyarSzoveg {
     width: 70%;
+}
+
+.h2zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.h3zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.h4zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.pzs {
+    color:white;
+    text-shadow: 0 0 15px black;
 }

@@ -43,6 +43,7 @@
     background-image: url(../img/horrorforest.jpg);
     background-size: auto;
 }
+
 .zsBackground {
     background-image: url(/img/sharknado.jpg);
     background-repeat: no-repeat;
@@ -53,9 +54,11 @@
 }
 
 .headerTextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;}
+    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+}
+
 .h1zs {
-    color:white;
+    color: white;
     text-shadow: 0 0 15px black;
     font-size: 32pt;
     text-align: center;
@@ -95,21 +98,32 @@
 }
 
 .h2zs {
-    color:white;
+    color: white;
     text-shadow: 0 0 15px black;
 }
 
 .h3zs {
-    color:white;
+    color: white;
     text-shadow: 0 0 15px black;
 }
 
 .h4zs {
-    color:white;
+    color: white;
     text-shadow: 0 0 15px black;
 }
 
 .pzs {
-    color:white;
+    color: white;
     text-shadow: 0 0 15px black;
+}
+
+body nav a {
+    padding: 50px;
+    line-height: 20px;
+    color: #8e9aaa;
+    font-size: 25px;
+}
+
+body nav a: :hover {
+    color: #fff;
 }

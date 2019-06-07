@@ -1,0 +1,40 @@
+/* 
+    Formázáshoz flexbox tulajdonságok
+    columnFlex: egymás alá rendezi a child elementeket
+    rowFlex: egymás mellé
+
+    spaceAround: egyenlő távokat szúr be a childok közé
+    center: középre rendez
+    spaceBetween: középre szúrja be a szabad helyet
+    flexStart: balra zárt
+    flexEnd: jobbra zárt
+*/
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexSpaceAround {
+    justify-content: space-around;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexSpaceBetween {
+    justify-content: space-between;
+}
+
+.flexFlexEnd {
+    justify-content: flex-end;
+}
+
+.flexFlexStart {
+    justify-content: flex-start;
+}

@@ -2,10 +2,10 @@ var quizQuestions = [
     // Pictures
     [{
         greeting: 'Introduction Quiz',
-        musicPic: '<img src="/img/music.jpg">',
-        sportsPic: '<img src="/img/sports.jpg">',
-        moviesPic: '<img src="/img/movies.jpg">',
-        doublePic: '<img src="/img/double.jpg">',
+        musicPic: '<img src="/img/music.jpg" alt="Pink Floyd">',
+        sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones">',
+        moviesPic: '<img src="/img/movies.jpg" alt="Quentin Tarantino">',
+        doublePic: '<img src="/img/double.jpg" alt="Samuel L. Jackson">',
     }],
     // First question block
     [{
@@ -126,4 +126,45 @@ var quizQuestions = [
     }, ],
 ];
 
-document.querySelector('#mainGreeter').innerHTML = quizQuestions[0].greeting;
+// h1 element
+document.querySelector('#mainGreeter').innerHTML = quizQuestions[0][0].greeting;
+// section pictures
+document.querySelector('#musicPic').innerHTML = quizQuestions[0][0].musicPic;
+document.querySelector('#sportsPic').innerHTML = quizQuestions[0][0].sportsPic;
+document.querySelector('#moviesPic').innerHTML = quizQuestions[0][0].moviesPic;
+document.querySelector('#doublePic').innerHTML = quizQuestions[0][0].doublePic;
+// music section
+var musicQuestionIDs = [
+    '#singerName',
+    '#illnessType',
+    '#drugPreferency',
+    '#successorName',
+    '#biggestSuccess',
+];
+for (var i = 0; i < musicQuestionIDs.length; i++) {
+    document.querySelector(musicQuestionIDs[i]).innerHTML = quizQuestions[1][i].question;
+}
+// sports section
+var sportsQuestionIDs = [
+    '#strongMan',
+    '#deadlift',
+    '#squat',
+    '#martialArt',
+    '#lightHeavyWeight',
+];
+for (var i = 0; i < sportsQuestionIDs.length; i++) {
+    document.querySelector(sportsQuestionIDs[i]).innerHTML = quizQuestions[2][i].question;
+}
+// movies section
+var moviesQuestionIDs = [
+    '#director',
+    '#samLJackson',
+    '#mexicanDogs',
+    '#killBill',
+    '#ffdp',
+];
+for (var i = 0; i < moviesQuestionIDs.length; i++) {
+    document.querySelector(moviesQuestionIDs[i]).innerHTML = quizQuestions[3][i].question;
+}
+// marcellus wallace section
+document.querySelector('#marcellusWallace').innerHTML = quizQuestions[4][0].question;

@@ -1,0 +1,78 @@
+/* 
+    Formázáshoz flexbox tulajdonságok
+    columnFlex: egymás alá rendezi a child elementeket
+    rowFlex: egymás mellé
+
+    spaceAround: egyenlő távokat szúr be a childok közé
+    center: középre rendez
+    spaceBetween: középre szúrja be a szabad helyet
+    flexStart: balra zárt
+    flexEnd: jobbra zárt
+*/
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexSpaceAround {
+    justify-content: space-around;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexSpaceBetween {
+    justify-content: space-between;
+}
+
+.flexFlexEnd {
+    justify-content: flex-end;
+}
+
+.flexFlexStart {
+    justify-content: flex-start;
+}
+
+.zsBackground {
+    background-image: url(/img/sharknado.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.h1zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+    font-size: 32pt;
+    text-align: center;
+}
+
+
+.h2zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.h3zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.h4zs {
+    color:white;
+    text-shadow: 0 0 15px black;
+}
+
+.pzs {
+    color:white;
+    text-shadow: 0 0 15px black;
+    text-align: ;
+}

@@ -76,3 +76,14 @@
     text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
     text-transform: uppercase;
 }
+
+.magyarFotok {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.magyarSzoveg {
+    width: 70%;
+}

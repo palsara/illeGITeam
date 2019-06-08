@@ -207,7 +207,7 @@ for (var i = 1; i < quizQuestions.length - 1; i++) {
 }
 
 function randomizeQuestionOrder(questionBlock, questionNumber) {
-  var labelID = "#";
+  var labelID = "";
   console.log(labelID);
   labelID = labelID + questionBlock + questionNumber;
   console.log(labelID);
@@ -215,16 +215,17 @@ function randomizeQuestionOrder(questionBlock, questionNumber) {
 }
 
 function writeContent(questionBlock, questionNumber, labelID) {
-  var keys = ["answer", "false1", "false2", "false3", "false4"];
+  var keys = quizQuestions.[questionBlock][questionNumber].keys;
   while (keys.length > 0) {
     var tmp = getRandomNumber(0, keys.length);
     var index = tmp + 1;
-    console.log(keys[tmp]);
     labelID = labelID + index;
     console.log(labelID);
     console.log(typeof labelID);
-    document.querySelector(labelID).innerHTML =
-      quizQuestions[questionBlock][questionNumber].keys[tmp];
+    console.log(keys[tmp]);
+    
+    //document.getElementById(labelID).innerHTML =
+    //quizQuestions[questionBlock][questionNumber].keys[tmp];
     keys.splice[tmp];
   }
 }

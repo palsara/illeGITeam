@@ -4,18 +4,19 @@ var quizQuestions = [
   [
     {
       greeting: "Introduction Quiz",
-      musicPic: '<img src="/img/music.jpg" alt="Pink Floyd">',
-      sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones">',
-      moviesPic: '<img src="/img/movies.jpg" alt="Quentin Tarantino">',
-      doublePic: '<img src="/img/double.jpg" alt="Samuel L. Jackson">'
+      musicPic: '<img src="/img/music.jpg" alt="Pink Floyd" class="quizPic">',
+      sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones" class="quizPic">',
+      moviesPic:
+        '<img src="/img/movies.jpg" alt="Quentin Tarantino" class="quizPic">',
+      doublePic:
+        '<img src="/img/double.jpg" alt="Samuel L. Jackson" class="quizPic">'
     }
   ],
   // First question block
   [
     {
       question: "Hogy hívják a Pink Floyd eredeti énekesét?",
-      answer: "Syd Barrett",
-      image: '<img src="/img/sydBarrett.jpg">'
+      answer: "Syd Barrett"
     },
     {
       question: "Milyen betegségben szenvedett?",
@@ -55,8 +56,7 @@ var quizQuestions = [
   [
     {
       question: "Ki jelenleg a világ legerősebb embere?",
-      answer: "Hafthor Julius Bjornsson",
-      image: '<img src="/img/thor.jpg">'
+      answer: "Hafthor Julius Bjornsson"
     },
     {
       question:
@@ -97,8 +97,7 @@ var quizQuestions = [
   [
     {
       question: "Melyik híres rendező látható a mellékelt ábrán?",
-      answer: "Quentin Tarantino",
-      image: '<img src="/img/tarantino.jpg">'
+      answer: "Quentin Tarantino"
     },
     {
       question:
@@ -145,8 +144,7 @@ var quizQuestions = [
       false1: "Mint egy p*c$@",
       false2: "Hogy mi?",
       false3: "Nyakkendős középkorú férfi, heggel a bal arcán",
-      false4: "Nem tudni",
-      image: '<img src="/img/egyPicsa.jpg">'
+      false4: "Nem tudni"
     }
   ]
 ];

@@ -37,8 +37,29 @@
 
 .flexFlexStart {
     justify-content: flex-start;
-<<<<<<< HEAD
 }
+
+/*
+    randomQuiz.html-hez külön innen
+*/
+.quizElementWidth {
+    width: 80%;
+    margin: 10px;
+}
+.quizPic {
+    border-radius: 15px;
+    height: 500px;
+    width: auto;
+}
+.quizBlock {
+    margin: 30px;
+}
+.quizSpan {
+    width: 150px;
+}
+/*
+    randomQuiz.html-hez küldön idáig
+*/
 
 .horrorBackground {
     background-image: url(../img/horrorforest.jpg);
@@ -132,6 +153,4 @@ body nav a :hover {
 
 body {
     background-color: burlywood;
-=======
->>>>>>> QuizTextInput
 }

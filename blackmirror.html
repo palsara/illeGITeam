@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="/js/picker.js"></script>
+
 </head>
 
 <body class="backgroundblack textcolorblack">
@@ -18,11 +18,33 @@
         <a href="/horror.html">Horror</a>
     </nav>
     <header class="rowFlex flexCenter">
-        <h1>Black Mirror</h1>
+        <h1>Sci-Fi</h1>
     </header>
     <main>
         <div>
-            <h2>Cselekmény</h2>
+            <p>
+                A sci-fi az angol: science fiction kifejezés rövidítése.
+                tudományos-fantasztikus mű olyan művészeti (irodalmi, film stb.)
+                alkotás, mely legtöbbször valódi vagy képzeletbeli
+                tudomány(ok)nak a társadalomra, vagy egyes egyénekre gyakorolt
+                hatását mutatja be. Ezeknek a műveknek a közös jellemzői, hogy
+                zömében egy lehetséges jövőben játszódó képzeletbeli történetek.
+            </p>
+            <h3>Típusai</h3>
+            <ul>
+                <li>Hard Sci-fi</li>
+                <li>Soft Sci-fi</li>
+                <li>Cyberpunk</li>
+                <li>Steampunk</li>
+                <li>Biopunk</li>
+                <li>Dieselpunk</li>
+            </ul>
+        </div>
+        <div class="rowFlex flexCenter">
+            <h2>Black Mirror</h2>
+        </div>
+        <div>
+            <h3>Cselekmény</h3>
             <p>
                 A sorozat legtöbb része egy olyan jelenben vagy közeljövőben
                 játszódik, ahol az információs technológia valamilyen forradalmi
@@ -34,13 +56,11 @@
             </p>
         </div>
 
-        <div>
 
-        </div>
         <div class="rowFlex flexSpaceAround">
             <div>
-                <h2>Epizódok</h2>
-                <ol>
+                <h3>Epizódok</h3>
+                <ul>
                     <li>Első évad</li>
                     <ul>
                         <li>The National Anthem </li>
@@ -72,7 +92,7 @@
                         <li>Smithereens</li>
                         <li>Striking Vipers</li>
                     </ul>
-                </ol>
+                </ul>
             </div>
             <div>
                 <iframe src="https://giphy.com/embed/3oriNZGGY2eNlwj2sE"
@@ -81,58 +101,22 @@
                 <p><a
                         href="https://giphy.com/gifs/producthunt-black-mirror-3oriNZGGY2eNlwj2sE">via
                         GIPHY</a></p>
+                <div class="flexSpaceAround">
+                    <a class="imgblack"
+                        href="https://www.youtube.com/watch?v=jDiYGjp5iFg"><img
+                            src="/img/youtube.png" alt="youtube">
+                    </a>
+                    <a class="imgblack"
+                        href="https://www.imdb.com/title/tt2085059/?ref_=ttep_ep_tt">
+                        <img src="/img/imdb.png" alt="imdb">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                <a class="imgblack"
-                    href="https://www.youtube.com/watch?v=jDiYGjp5iFg"><img
-                        src="/img/youtube.png" alt="youtube">
-                </a>
-                <a class="imgblack"
-                    href="https://www.imdb.com/title/tt2085059/?ref_=ttep_ep_tt">
-                    <img src="/img/imdb.png" alt="imdb">
-                </a>
-            </div>
-        </div>
-        <div>
-            <h2>Mihez lenne kedved?</h2>
-            <p>Magyar v külföldi?</p>
-            <div>
-                <label for="magyar">Magyar</label>
-                <input type="radio" id="magyar" value="1" name="nyelv">
-            </div>
-            <div>
-                <label for="kulfoldi">Külföldi</label>
-                <input type="radio" name="nyelv" id="kulfoldi" value="0">
-            </div>
-            <p>Valami félelmetesre vágysz?</p>
-            <div>
-                <label for="scary">Igen</label>
-                <input type="radio" name="horror" id="scary" value="1">
-            </div>
-            <div>
-                <label for="nscary">Nem</label>
-                <input type="radio" name="horror" id="nscary" value="0">
-            </div>
-            <p>Vicces?</p>
-            <div>
-                <label for="funny">Igen</label>
-                <input type="radio" name="zs" id="funny" value="1">
-            </div>
-            <div>
-                <label for="nfunny">Nem</label>
-                <input type="radio" name="zs" id="nfunny" value="0">
-            </div>
-            <div id="movie">
-                Lássuk a medvét: 
-            </div>
-            <div>
-                <button type="button" onclick="Picker();">Eredmény</button>
-            </div>
-        </div>
     </main>
-    <aside>
 
-    </aside>
-    
+
 </body>
 
 </html>

@@ -150,6 +150,7 @@ var quizQuestions = [
     }
   ]
 ];
+// NEM VÁLTOZÓ SORRENDŰ CONTENT BEOLVASÁSA
 // Tite
 document.querySelector("#pageTitle").innerHTML = title;
 // h1 element
@@ -198,35 +199,98 @@ for (var i = 0; i < moviesQuestionIDs.length; i++) {
 // marcellus wallace section
 document.querySelector("#marcellusWallace").innerHTML =
   quizQuestions[4][0].question;
+// BEOLVASÁS VÉGE
 
-// Mók
-for (var i = 1; i < quizQuestions.length - 1; i++) {
-  for (var j = 1; j < quizQuestions[i].length; i++) {
+// VÁLTOZÓ TARTALMÚ CONTENT BEOLVASÁSA
+
+for (var i = 1; i < quizQuestions.length; i++) {
+  for (var j = 1; j < quizQuestions[i].length; j++) {
+    console.log("1 quizQuestions.length: " + quizQuestions.length);
+    console.log("2 quizQuestions[i].length: " + quizQuestions[i].length);
     randomizeQuestionOrder(i, j);
   }
 }
+// Function declarations
 
 function randomizeQuestionOrder(questionBlock, questionNumber) {
   var labelID = "";
-  console.log(labelID);
   labelID = labelID + questionBlock + questionNumber;
-  console.log(labelID);
+  // Két számjegyű
+  console.log("3 labelID before index: " + labelID);
+  // String
+  console.log("4 typeof LabelID before index: " + typeof labelID);
   writeContent(questionBlock, questionNumber, labelID);
 }
 
 function writeContent(questionBlock, questionNumber, labelID) {
-  var keys = quizQuestions.[questionBlock][questionNumber].keys;
-  while (keys.length > 0) {
-    var tmp = getRandomNumber(0, keys.length);
-    var index = tmp + 1;
-    labelID = labelID + index;
-    console.log(labelID);
-    console.log(typeof labelID);
-    console.log(keys[tmp]);
-    
-    //document.getElementById(labelID).innerHTML =
-    //quizQuestions[questionBlock][questionNumber].keys[tmp];
-    keys.splice[tmp];
+  // .length = 6
+  var objectKeys = Object.keys(quizQuestions[questionBlock][questionNumber]);
+  console.log("5 Object keys in full: " + objectKeys);
+  // .length = 5
+  objectKeys.splice(0, 1);
+  console.log("6 objectKeys after splice: " + objectKeys);
+  var index = [1, 2, 3, 4, 5];
+  // index.length = 5
+  while (index.length > 0) {
+    var tmp = getRandomNumber(1, objectKeys.length + 1);
+    console.log("7 tmp: " + tmp);
+    if (index.includes(tmp)) {
+      // between 0 and 4
+      // index.splice(index.indexOf(tmp + 1), 1);
+      console.log("8 Index array: " + index);
+      // between 1 and 5
+      // var index = tmp + 1;
+      // console.log("index:" + index);
+      var tmpLabelID = "";
+      // console.log("9 tmpLabelID type: " + typeof tmpLabelID);
+      // tmp++;
+      // console.log("10 type of tmp: " + typeof tmp);
+      // console.log("11 value of tmp: " + tmp);
+      tmpLabelID = labelID + index[index.indexOf(tmp)];
+      // tmpLabelID = labelID + index[tmp].toString();
+      // console.log("12 typeof tmp: " + typeof tmp);
+      // console.log("13 typeof tmpLabelID: " + typeof tmpLabelID);
+      tmp = parseInt(tmp);
+      // tmp--;
+      // console.log("14 value of tmp: " + tmp);
+      // console.log("LabelID after index: " + tmpLabelID);
+      // console.log("15 objectKeys[tmp] value: " + objectKeys[tmp]);
+      console.log("16 tmpLabelID : " + tmpLabelID);
+      switch (objectKeys[tmp - 1]) {
+        case "answer":
+          document.getElementById(tmpLabelID).innerHTML =
+            quizQuestions[questionBlock][questionNumber].answer;
+          index.splice(index.indexOf(tmp), 1);
+          console.log("17 index value: " + index);
+          break;
+        case "false1":
+          document.getElementById(tmpLabelID).innerHTML =
+            quizQuestions[questionBlock][questionNumber].false1;
+          index.splice(index.indexOf(tmp), 1);
+          console.log("17 index value: " + index);
+          break;
+        case "false2":
+          document.getElementById(tmpLabelID).innerHTML =
+            quizQuestions[questionBlock][questionNumber].false2;
+          index.splice(index.indexOf(tmp), 1);
+          console.log("17 index value: " + index);
+          break;
+        case "false3":
+          document.getElementById(tmpLabelID).innerHTML =
+            quizQuestions[questionBlock][questionNumber].false3;
+          index.splice(index.indexOf(tmp), 1);
+          console.log("17 index value: " + index);
+          break;
+        case "false4":
+          document.getElementById(tmpLabelID).innerHTML =
+            quizQuestions[questionBlock][questionNumber].false4;
+          index.splice(index.indexOf(tmp), 1);
+          console.log("17 index value: " + index);
+          break;
+      }
+    } else {
+      continue;
+    }
   }
 }
 

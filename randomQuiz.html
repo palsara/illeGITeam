@@ -3,74 +3,414 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible"
-          content="ie=edge">
-    <title>Introduction Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="pageTitle"></title>
 </head>
 
 <body>
     <h1 id="mainGreeter"></h1>
-    <div class="columnFlex"
-         id="mainContainer">
-        <div class="columnFlex"
-             id="themeMusic">
-            <div id="musicPic">
+    <div id="mainContainer">
+        <form id="randomQuiz" name="randomQuiz" class="columnFlex flexSpaceAround">
+            <div class="columnFlex" id="themeMusic">
+                <div id="musicPic">
 
+                </div>
+                <div id="musicText" class="columnFlex flexSpaceAround">
+                    <div>
+                        <div>
+                            <label for="singerName" id="singerName"></label>
+                        </div>
+                        <div>
+                            <input type="text" name="singerName">
+                        </div>
+                    </div>
+                </div>
+                <div id="musicFirstRow" class="rowFlex flexSpaceAround">
+                    <div id="musicFirst">
+                        <span id="illnessType"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="illnessType" id="1-1-1" checked>
+                                <label for="1-1-1" id="111"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="illnessType" id="1-1-2">
+                                <label for="1-1-2" id="112"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="illnessType"  id="1-1-3">
+                                <label for="1-1-3" id="113"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="illnessType" id="1-1-4">
+                                <label for="1-1-4" id="114"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="illnessType" id="1-1-5">
+                                <label for="1-1-5" id="115"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="musicSecond">
+                        <span id="drugPreferency"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="drugPreferency" id="1-2-1" checked>
+                                <label for="1-2-1" id="121"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="drugPreferency" id="1-2-2">
+                                <label for="1-2-2" id="122"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="drugPreferency" id="1-2-3">
+                                <label for="1-2-3" id=123></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="drugPreferency" id="1-2-4">
+                                <label for="1-2-4" id="124"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="drugPreferency" id="1-2-5">
+                                <label for="1-2-5" id="125"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="musicSecondRow" class="rowFlex flexSpaceAround">
+                    <div id="musicThird">
+                        <span id="successorName"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="successorName" id="1-3-1" checked>
+                                <label for="1-3-1" id="131"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="successorName" id="1-3-2">
+                                <label for="1-3-2" id=132></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="successorName" id="1-3-3">
+                                <label for="1-3-3" id="133"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="successorName" id="1-3-4">
+                                <label for="1-3-4" id="134"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="successorName" id="1-3-5">
+                                <label for="1-3-5" id="135"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="musicFourth">
+                        <span id="biggestSuccess"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="biggestSuccess" id="1-4-1" checked>
+                                <label for="1-4-1" id="141"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="biggestSuccess" id="1-4-2">
+                                <label for="1-4-2" id="142"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="biggestSuccess" id="1-4-3">
+                                <label for="1-4-3" id="143"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="biggestSuccess" id="1-4-4">
+                                <label for="1-4-4" id="144"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="biggestSuccess" id="1-4-5">
+                                <label for="1-4-5" id="145"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="musicText">
+            <div class="columnFlex" id="themeSports">
+                <div id="sportsPic">
 
+                </div>
+                <div id="sportsText">
+                    <div class="columnFlex flexSpaceAround">
+                        <div>
+                            <label for="strongMan" id="strongMan"></label>
+                        </div>
+                        <div>
+                            <input type="text" name="strongMan">
+                        </div>
+                    </div>
+                </div>
+                <div id="sportsFirstRow" class="rowFlex flexSpaceAround">
+                    <div id="sportsFirst">
+                        <span id="deadlift"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="deadlift" id="2-1-1"  checked>
+                                <label for="2-1-1" id="211"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="deadlift" id="2-1-2">
+                                <label for="2-1-2" id="212"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="deadlift" id="2-1-3">
+                                <label for="2-1-3" id="213"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="deadlift" id="2-1-4">
+                                <label for="2-1-4" id="214"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="deadlift" id="2-1-5">
+                                <label for="2-1-5" id="215"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sportsSecond">
+                        <span id="squat"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="squat" id="2-2-1" checked>
+                                <label for="2-2-1" id="221"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="squat" id="2-2-2">
+                                <label for="2-2-2" id="222"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="squat" id="2-2-3">
+                                <label for="2-2-3" id="223"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="squat" id="2-2-4">
+                                <label for="2-2-4" id="224"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="squat" id="2-2-5">
+                                <label for="2-2-5" id="225"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sportsSecondRow" class="rowFlex flexSpaceAround">
+                    <div id="sportsThird">
+                        <span id="martialArt"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="martialArt" id="2-3-1" checked>
+                                <label for="2-3-1" id="231"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="martialArt"  id="2-3-2">
+                                <label for="2-3-2" id="232"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="martialArt"
+                                id="2-3-3">
+                                <label for="2-3-3" id="233"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="martialArt"
+                                id="2-3-4">
+                                <label for="2-3-4" id="234"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="martialArt" id="2-3-5">
+                                <label for="2-3-5" id="235"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sportsFourth">
+                        <span id="lightHeavyWeight"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="lightHeavyWeight" id="2-4-1" checked>
+                                <label for="2-4-1" id="241"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="lightHeavyWeight" id="2-4-2">
+                                <label for="2-4-2" id="242"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="lightHeavyWeight"
+                                id="2-4-3">
+                                <label for="2-4-3" id="243"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="lightHeavyWeight" id="2-4-4">
+                                <label for="2-4-4" id="244"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="lightHeavyWeight" id="2-4-5">
+                                <label for="2-4-5" id="245"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="musicFirstRow">
+            <div class="columnFlex" id="themeMovies">
+                <div id="moviesPic">
 
+                </div>
+                <div id="moviesText">
+                    <div class="columnFlex flexSpaceAround">
+                        <div>
+                            <label for="director" id="director"></label>
+                        </div>
+                        <div>
+                            <input type="text" name="director">
+                        </div>
+                    </div>
+                </div>
+                <div id="moviesFirstRow" class="rowFlex flexSpaceAround">
+                    <div id="moviesFirst">
+                        <span id="samLJackson"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="samLJackson" id="3-1-1" checked>
+                                <label for="3-1-1" id="311"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="samLJackson"
+                                id="3-1-2">
+                                <label for="3-1-2" id="312"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="samLJackson"
+                                id="3-1-3">
+                                <label for="3-1-3" id="313"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="samLJackson" id="3-1-4">
+                                <label for="3-1-4" id="314"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="samLJackson" id="3-1-5">
+                                <label for="3-1-5" id="315"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="moviesSecond">
+                        <span id="mexicanDogs"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="mexicanDogs" id="3-2-1" checked>
+                                <label for="3-2-1" id="321"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="mexicanDogs"
+                                id="3-2-2">
+                                <label for="3-2-2" id="322"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="mexicanDogs"
+                                id="3-2-3">
+                                <label for="3-2-3" id="323"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="mexicanDogs"
+                                id="3-2-4">
+                                <label for="3-2-4" id="324"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="mexicanDogs"
+                                id="3-2-5">
+                                <label for="3-2-5" id="325"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="moviesSecondRow" class="rowFlex flexSpaceAround">
+                    <div id="moviesThird">
+                        <span id="killBill"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="killBill" id="3-3-1" checked>
+                                <label for="3-3-1" id="331"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="killBill" id="3-3-2">
+                                <label for="3-3-2" id="332"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="killBill" id="3-3-3">
+                                <label for="3-3-3" id="333"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="killBill" id="3-3-4">
+                                <label for="3-3-4" id="334"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="killBill" id="3-3-5">
+                                <label for="3-3-5" id="335"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="moviesFourth">
+                        <span id="ffdp"></span>
+                        <div class="columnFlex flexSpaceAround">
+                            <div>
+                                <input type="radio" name="ffdp" id="3-4-1" checked>
+                                <label for="3-4-1" id="341"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ffdp" id="3-4-2">
+                                <label for="3-4-2" id="342"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ffdp" id="3-4-3">
+                                <label for="3-4-3" id="343"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ffdp" id="3-4-4">
+                                <label for="3-4-4" id="344"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ffdp" id="3-4-5">
+                                <label for="3-4-5" id="345"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="musicSecondRow">
+            <div class="columnFlex" id="doubleOrNothing">
+                <div id="doublePic">
 
+                </div>
+                <div id="doubleFirstRow" class="columnFlex">
+                    <span id="marcellusWallace"></span>
+                    <div class="columnFlex flexSpaceAround">
+                        <div>
+                            <input type="radio" name="marcellusWallace" id="4-1">
+                            <label for="4-1" id="41"></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="marcellusWallace" id="4-2">
+                            <label for="4-2" id="42"></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="marcellusWallace" id="4-3">
+                            <label for="4-3" id="43"></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="marcellusWallace" id="4-4">
+                            <label for="4-4" id="44"></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="marcellusWallace" id="4-5">
+                            <label for="4-5" id="45"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="columnFlex"
-             id="themeSports">
-            <div id="sportsPic">
-
-            </div>
-            <div id="sportsText">
-
-            </div>
-            <div id="sportsFirstRow">
-
-            </div>
-            <div id="sportsSecondRow">
-
-            </div>
-        </div>
-        <div class="columnFlex"
-             id="themeMovies">
-            <div id="moviesPic">
-
-            </div>
-            <div id="moviesText">
-
-            </div>
-            <div id="moviesFirstRow">
-
-            </div>
-            <div id="moviesSecondRow">
-
-            </div>
-        </div>
-        <div class="columnFlex"
-             id="doubleOrNothing">
-            <div id="doublePic">
-
-            </div>
-            <div id="doubleFirstRow">
-
-            </div>
-        </div>
+        </form id="randomQuiz" name="randomQuiz" vlass>
     </div>
-    <script type="text/javascript"
-            src="/js/randomQuiz.js"></script>
+    <script type="text/javascript" src="/js/randomQuiz.js"></script>
 </body>
 
 </html>

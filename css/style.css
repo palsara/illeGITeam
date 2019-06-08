@@ -37,6 +37,7 @@
 
 .flexFlexStart {
     justify-content: flex-start;
+<<<<<<< HEAD
 }
 
 .horrorBackground {
@@ -131,4 +132,6 @@ body nav a :hover {
 
 body {
     background-color: burlywood;
+=======
+>>>>>>> QuizTextInput
 }

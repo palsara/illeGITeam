@@ -114,7 +114,7 @@ var quizQuestions = [
         'Miért vette le Minnie Mink a "Mexikóiaknak és kutyáknak belépni tilos?" táblát a boltja ajtajáról, az Aljas Nyolcas c. filmben?',
       answer: "Mert megkegyelmezett a kutyáknak",
       false1: "Hogy a hóvihar ne fújja el",
-      false2: "Mert szétlőtték a film időrendi elején",
+      false2: "Mert szétlőtték az ajtót a film időrendi elején",
       false3: "Mert xenofóbiával vádolták",
       false4: "Nem vette le"
     },
@@ -129,7 +129,7 @@ var quizQuestions = [
     },
     {
       question:
-        'Melyik híres amerikai kultista szerepel az idén megjelenő "Once Upon a Time in Hollywood" c. filmben?',
+        'Melyik híres kultista szerepel az idén megjelenő "Once Upon a Time in Hollywood" c. filmben?',
       answer: "Charles Manson",
       false1: "Anders Breivik",
       false2: "Shoko Asahara",
@@ -199,6 +199,11 @@ for (var i = 0; i < moviesQuestionIDs.length; i++) {
 // marcellus wallace section
 document.querySelector("#marcellusWallace").innerHTML =
   quizQuestions[4][0].question;
+document.getElementById("43").innerHTML = quizQuestions[4][0].answer;
+document.getElementById("41").innerHTML = quizQuestions[4][0].false1;
+document.getElementById("45").innerHTML = quizQuestions[4][0].false2;
+document.getElementById("42").innerHTML = quizQuestions[4][0].false3;
+document.getElementById("44").innerHTML = quizQuestions[4][0].false4;
 // BEOLVASÁS VÉGE
 
 // VÁLTOZÓ TARTALMÚ CONTENT BEOLVASÁSA

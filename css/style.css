@@ -103,6 +103,11 @@
 #marcellusWallace {
     text-align: center;
 }
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24;
+}
 /*
     randomQuiz.html-hez küldön idáig
 */

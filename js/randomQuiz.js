@@ -231,6 +231,7 @@ function writeContent(questionBlock, questionNumber, labelID) {
   console.log("6 objectKeys after splice: " + objectKeys);
   var index = [1, 2, 3, 4, 5];
   // index.length = 5
+  var iterator = 0;
   while (index.length > 0) {
     var tmp = getRandomNumber(1, objectKeys.length + 1);
     console.log("7 tmp: " + tmp);
@@ -250,41 +251,45 @@ function writeContent(questionBlock, questionNumber, labelID) {
       // tmpLabelID = labelID + index[tmp].toString();
       // console.log("12 typeof tmp: " + typeof tmp);
       // console.log("13 typeof tmpLabelID: " + typeof tmpLabelID);
-      tmp = parseInt(tmp);
       // tmp--;
       // console.log("14 value of tmp: " + tmp);
       // console.log("LabelID after index: " + tmpLabelID);
       // console.log("15 objectKeys[tmp] value: " + objectKeys[tmp]);
       console.log("16 tmpLabelID : " + tmpLabelID);
-      switch (objectKeys[tmp - 1]) {
-        case "answer":
+      switch (iterator) {
+        case 0:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].answer;
           index.splice(index.indexOf(tmp), 1);
+          iterator++;
           console.log("17 index value: " + index);
           break;
-        case "false1":
+        case 1:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false1;
           index.splice(index.indexOf(tmp), 1);
           console.log("17 index value: " + index);
+          iterator++;
           break;
-        case "false2":
+        case 2:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false2;
           index.splice(index.indexOf(tmp), 1);
+          iterator++;
           console.log("17 index value: " + index);
           break;
-        case "false3":
+        case 3:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false3;
           index.splice(index.indexOf(tmp), 1);
+          iterator++;
           console.log("17 index value: " + index);
           break;
-        case "false4":
+        case 4:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false4;
           index.splice(index.indexOf(tmp), 1);
+          iterator++;
           console.log("17 index value: " + index);
           break;
       }

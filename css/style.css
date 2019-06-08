@@ -9,6 +9,11 @@
     flexStart: balra zárt
     flexEnd: jobbra zárt
 */
+* {
+    border-width: 1px;
+    border-color: red;
+    border-style: solid;
+}
 .columnFlex {
     display: flex;
     flex-direction: column;
@@ -42,20 +47,48 @@
 /*
     randomQuiz.html-hez külön innen
 */
-.quizElementWidth {
-    width: 80%;
-    margin: 10px;
-}
 .quizPic {
-    border-radius: 15px;
-    height: 500px;
-    width: auto;
+    
 }
 .quizBlock {
+    display: flex;
+    flex-direction: column;
     margin: 30px;
+    width: 95%;
+}
+.quizRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.quizQuestion {
+
+}
+.quizText {
+
 }
 .quizSpan {
-    width: 150px;
+    
+}
+.quizElement {
+    width: 45%;
+}
+.quizRadio {
+
+}
+.quizColumn {
+    dispay: flex;
+    flex-direction: column;
+}
+.Pic {
+    border-radius: 20px;
+    height: 700px;
+    width: auto;
+}
+#doubleFirstRow {
+    display: flex;
+    justify-content: column;
 }
 /*
     randomQuiz.html-hez küldön idáig

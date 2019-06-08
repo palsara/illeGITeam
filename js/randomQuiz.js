@@ -4,12 +4,12 @@ var quizQuestions = [
   [
     {
       greeting: "Introduction Quiz",
-      musicPic: '<img src="/img/music.jpg" alt="Pink Floyd" class="quizPic">',
-      sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones" class="quizPic">',
+      musicPic: '<img src="/img/music.jpg" alt="Pink Floyd" class="Pic">',
+      sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones" class="Pic">',
       moviesPic:
-        '<img src="/img/movies.jpg" alt="Quentin Tarantino" class="quizPic">',
+        '<img src="/img/movies.jpg" alt="Quentin Tarantino" class="Pic">',
       doublePic:
-        '<img src="/img/double.jpg" alt="Samuel L. Jackson" class="quizPic">'
+        '<img src="/img/double.jpg" alt="Samuel L. Jackson" class="Pic">'
     }
   ],
   // First question block

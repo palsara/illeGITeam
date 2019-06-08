@@ -12,12 +12,12 @@
 <body>
     <h1 id="mainGreeter"></h1>
     <div id="mainContainer">
-        <form id="randomQuiz" name="randomQuiz" class="columnFlex flexSpaceAround">
-            <div class="columnFlex quizBlock" id="themeMusic">
-                <div id="musicPic" class="rowFlex flexCenter">
+        <form id="randomQuiz" name="randomQuiz">
+            <div class="quizBlock" id="themeMusic">
+                <div id="musicPic" class="quizPic">
 
                 </div>
-                <div id="musicText" class="columnFlex flexSpaceAround quizElementWidth">
+                <div id="musicText" class="quizText">
                     <div>
                         <div>
                             <label for="singerName" id="singerName"></label>
@@ -27,10 +27,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="musicFirstRow" class="rowFlex flexSpaceAround">
-                    <div id="musicFirst">
+                <div id="musicFirstRow" class="quizRow">
+                    <div id="musicFirst" class="quizElement">
                         <span id="illnessType" class="quizSpan"></span>
-                        <div class="columnFlex flexCenter quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="illnessType" id="1-1-1" checked>
                                 <label for="1-1-1" id="111"></label>
@@ -53,9 +53,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="musicSecond">
+                    <div id="musicSecond" class="quizElement">
                         <span id="drugPreferency" class="quizSpan"></span>
-                        <div class="columnFlex flexCenter quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="drugPreferency" id="1-2-1" checked>
                                 <label for="1-2-1" id="121"></label>
@@ -79,10 +79,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="musicSecondRow" class="rowFlex flexSpaceAround">
-                    <div id="musicThird">
+                <div id="musicSecondRow" class="quizRow">
+                    <div id="musicThird" class="quizElement">
                         <span id="successorName" class="quizSpan"></span>
-                        <div class="columnFlex flexCenter quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="successorName" id="1-3-1" checked>
                                 <label for="1-3-1" id="131"></label>
@@ -105,9 +105,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="musicFourth">
+                    <div id="musicFourth" class="quizElement">
                         <span id="biggestSuccess" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="biggestSuccess" id="1-4-1" checked>
                                 <label for="1-4-1" id="141"></label>
@@ -132,12 +132,12 @@
                     </div>
                 </div>
             </div>
-            <div class="columnFlex quizBlock" id="themeSports">
-                <div id="sportsPic" class="rowFlex flexCenter">
+            <div class="quizBlock" id="themeSports">
+                <div id="sportsPic" class="quizPic">
 
                 </div>
                 <div id="sportsText">
-                    <div class="columnFlex flexSpaceAround">
+                    <div class="quizText">
                         <div>
                             <label for="strongMan" id="strongMan"></label>
                         </div>
@@ -146,10 +146,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="sportsFirstRow" class="rowFlex flexSpaceAround quizElementWidth">
-                    <div id="sportsFirst">
+                <div id="sportsFirstRow" class="quizRow">
+                    <div id="sportsFirst" class="quizElement">
                         <span id="deadlift" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="deadlift" id="2-1-1"  checked>
                                 <label for="2-1-1" id="211"></label>
@@ -172,9 +172,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="sportsSecond">
+                    <div id="sportsSecond" class="quizElement">
                         <span id="squat" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="squat" id="2-2-1" checked>
                                 <label for="2-2-1" id="221"></label>
@@ -198,10 +198,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="sportsSecondRow" class="rowFlex flexSpaceAround">
-                    <div id="sportsThird">
+                <div id="sportsSecondRow" class="quizRow">
+                    <div id="sportsThird" class="quizElement">
                         <span id="martialArt" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="martialArt" id="2-3-1" checked>
                                 <label for="2-3-1" id="231"></label>
@@ -226,9 +226,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="sportsFourth">
+                    <div id="sportsFourth" class="quizElement">
                         <span id="lightHeavyWeight" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="lightHeavyWeight" id="2-4-1" checked>
                                 <label for="2-4-1" id="241"></label>
@@ -254,12 +254,12 @@
                     </div>
                 </div>
             </div>
-            <div class="columnFlex quizBlock" id="themeMovies">
-                <div id="moviesPic" class="rowFlex flexCenter">
+            <div class="quizBlock" id="themeMovies">
+                <div id="moviesPic" class="quizPic">
 
                 </div>
                 <div id="moviesText">
-                    <div class="columnFlex flexSpaceAround">
+                    <div class="quizText">
                         <div>
                             <label for="director" id="director"></label>
                         </div>
@@ -268,10 +268,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="moviesFirstRow" class="rowFlex flexSpaceAround quizElementWidth">
-                    <div id="moviesFirst">
+                <div id="moviesFirstRow" class="quizRow">
+                    <div id="moviesFirst" class="quizElement">
                         <span id="samLJackson" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="samLJackson" id="3-1-1" checked>
                                 <label for="3-1-1" id="311"></label>
@@ -296,9 +296,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="moviesSecond">
+                    <div id="moviesSecond" class="quizElement">
                         <span id="mexicanDogs" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="mexicanDogs" id="3-2-1" checked>
                                 <label for="3-2-1" id="321"></label>
@@ -326,10 +326,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="moviesSecondRow" class="rowFlex flexSpaceAround">
-                    <div id="moviesThird">
+                <div id="moviesSecondRow" class="quizRow">
+                    <div id="moviesThird" class="quizElement">
                         <span id="killBill" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="killBill" id="3-3-1" checked>
                                 <label for="3-3-1" id="331"></label>
@@ -352,9 +352,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="moviesFourth">
+                    <div id="moviesFourth" class="quizElement">
                         <span id="ffdp" class="quizSpan"></span>
-                        <div class="columnFlex flexSpaceAround quizElementWidth">
+                        <div class="quizRadio">
                             <div>
                                 <input type="radio" name="ffdp" id="3-4-1" checked>
                                 <label for="3-4-1" id="341"></label>
@@ -379,13 +379,13 @@
                     </div>
                 </div>
             </div>
-            <div class="columnFlex quizBlock" id="doubleOrNothing">
-                <div id="doublePic" class="rowFlex flexCenter">
+            <div class="quizBlock" id="doubleOrNothing">
+                <div id="doublePic" class="quizPic">
 
                 </div>
-                <div id="doubleFirstRow" class="columnFlex">
+                <div id="doubleFirstRow" class="quizColumn">
                     <span id="marcellusWallace" class="quizSpan"></span>
-                    <div class="columnFlex flexCenter quizElementWidth">
+                    <div class="quizRadio">
                         <div>
                             <input type="radio" name="marcellusWallace" id="4-1">
                             <label for="4-1" id="41"></label>

@@ -22,6 +22,67 @@
         <a href="/blackmirror">Black Mirror</a>
     </nav>
 
+    <title>Index</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <header>
+
+    </header>
+    <main class="rowFlex flexCenter">
+        <div>
+            <h2>Milyen filmhez lenne kedved?</h2>
+            <p>Magyar vagy külföldi?</p>
+            <div>
+                <label for="magyar">Magyar</label>
+                <input type="radio" id="magyar" value="1" name="nyelv">
+            </div>
+            <div>
+                <label for="kulfoldi">Külföldi</label>
+                <input type="radio" name="nyelv" id="kulfoldi" value="0">
+            </div>
+            <p>Valami félelmetesre vágysz?</p>
+            <div>
+                <label for="scary">Igen</label>
+                <input type="radio" name="horror" id="scary" value="1">
+            </div>
+            <div>
+                <label for="nscary">Nem</label>
+                <input type="radio" name="horror" id="nscary" value="0">
+            </div>
+            <p>Esetleg viccesre?</p>
+            <div>
+                <label for="funny">Igen</label>
+                <input type="radio" name="zs" id="funny" value="1">
+            </div>
+            <div>
+                <label for="nfunny">Nem</label>
+                <input type="radio" name="zs" id="nfunny" value="0">
+            </div>
+            <div id="movie">
+
+            </div>
+            <div>
+                <button class="buttonblack" type="button"
+                    onclick="Picker();">Eredmény</button>
+            </div>
+            <div id="rr">
+
+            </div>
+        </div>
+        <script src="/js/picker.js"></script>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

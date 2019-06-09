@@ -10,130 +10,137 @@
     flexEnd: jobbra zárt
 */
 @font-face {
-    src: url(../fonts/good-timing.bold.ttf);
-    font-family: GoodTiming;
+  src: url(../fonts/good-timing.bold.ttf);
+  font-family: GoodTiming;
 }
 
 @font-face {
-    src: url(../fonts/coinage-caps-kruger-gray.regular.ttf);
-    font-family: Kruger;
+  src: url(../fonts/coinage-caps-kruger-gray.regular.ttf);
+  font-family: Kruger;
 }
 
 @font-face {
-    src: url(../fonts/fengardo-neue.regular.ttf);
-    font-family: Fengardo;
+  src: url(../fonts/fengardo-neue.regular.ttf);
+  font-family: Fengardo;
 }
 
 .columnFlex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rowFlex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .flexSpaceAround {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .flexCenter {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flexSpaceBetween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flexFlexEnd {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .flexFlexStart {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 /*
     randomQuiz.html-hez külön innen
 */
 .quizPic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quizBlock {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 95%;
 }
 
 .quizRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
 }
 
-.quizQuestion {}
-
 .quizText {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 400px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .quizSpan {
-    font-weight: bold;
-    margin: 10px;
+  font-weight: bold;
+  margin: 10px;
 }
 
 .quizElement {
-    width: 35%;
+  width: 35%;
 }
 
 .quizRadio {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quizColumn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Pic {
-    border-radius: 20px;
-    height: 700px;
-    width: auto;
+  border-radius: 20px;
+  height: 700px;
+  width: auto;
 }
 
 #doubleFirstRow {
-    display: flex;
-    justify-content: column;
+  display: flex;
+  justify-content: column;
 }
 
 .textLabel {
-    text-align: center;
+  text-align: center;
 }
 
 .textInput {
-    width: 100%;
+  width: 100%;
 }
 
 #marcellusWallace {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24;
+}
+
+.quizBackground {
+  background-color: #cdcdcd !important;
+}
+
+.submitButton {
+  height: 40px;
+  width: auto;
 }
 
 /*
@@ -141,168 +148,174 @@
 */
 
 .horrorBackground {
-    background-image: url(../img/horrorforest.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin-top: 0px;
-    padding-top: 0px;
+  background-image: url(../img/horrorforest.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .zsBackground {
-    background-image: url(/img/sharknado.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin-top: 0px;
-    padding-top: 0px;
+  background-image: url(/img/sharknado.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .headerTextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
-    text-align: center;
-    font-size: 32pt;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-align: center;
+  font-size: 32pt;
 }
 
 .h1zs {
-    color: white;
-    text-shadow: 0 0 15px black;
-    font-size: 32pt;
-    text-align: center;
+  color: white;
+  text-shadow: 0 0 15px black;
+  font-size: 32pt;
+  text-align: center;
 }
 
 .h2TextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
 }
 
 .h3TextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
 }
 
 .h4TextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
 }
 
 .pTextStyle {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
 }
 
-
 .thead {
-    text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
-    text-transform: uppercase;
+  text-shadow: 0 0 3px yellow, 0 0 3px orange, 0 0 5px red;
+  text-transform: uppercase;
 }
 
 .h2zs {
-    color: white;
-    text-shadow: 0 0 15px black;
+  color: white;
+  text-shadow: 0 0 15px black;
 }
 
 .h3zs {
-    color: white;
-    text-shadow: 0 0 15px black;
+  color: white;
+  text-shadow: 0 0 15px black;
 }
 
 .h4zs {
-    color: white;
-    text-shadow: 0 0 15px black;
+  color: white;
+  text-shadow: 0 0 15px black;
 }
 
 .pzs {
-    color: white;
-    text-shadow: 0 0 15px black;
-    width: 85%;
+  color: white;
+  text-shadow: 0 0 15px black;
+  width: 85%;
 }
 
 body header img {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    background-color: rgb(31, 56, 54);
-    margin: 0;
+  background-color: rgb(31, 56, 54);
+  margin: 0;
+}
+
+.illeGITeamNav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 body nav a {
-    padding-left: 50px;
-    padding-right: 50px;
-    line-height: 20px;
-    color: #e78428;
-    font-size: 25px;
-    font-family: GoodTiming;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 20px;
+  color: #e78428;
+  font-size: 25px;
+  font-family: GoodTiming;
 }
 
 body nav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 #flag {
-    background-image: url(/img/flag.png);
-    background-color: rgb(197, 204, 202);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin-top: 0px;
-    padding-top: 0px;
-    font-family: Fengardo;
+  background-image: url(/img/flag.png);
+  background-color: rgb(197, 204, 202);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Fengardo;
 }
 
 .magyarFotok {
-    max-width: 300px;
-    max-height: 200px;
-    border-radius: 50px;
-    padding: 30px;
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 50px;
+  padding: 30px;
 }
 
 .cimSorHun {
-    font-family: Kruger;
-    padding-left: 20px;
+  font-family: Kruger;
+  padding-left: 20px;
 }
 
 .magyarSzoveg {
-    width: 70%;
-    padding: 30px;
+  width: 70%;
+  padding: 30px;
 }
 
 .textHun {
-    font-family: Fengardo;
-    padding-left: 20px;
-    padding-right: 50px;
+  font-family: Fengardo;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 #magyarQuiz {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 #smartEH {
-    padding: 10px;
-    border-radius: 5px;
-    margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
 }
 
 .image-footer {
-    display: block;
-    border-radius: 8px;
-    width: 90px;
-    height: 90px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-footer:hover {
-    box-shadow: 0 0 10px 5px orange;
+  box-shadow: 0 0 10px 5px orange;
 }
 
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background-color: black;
-    color: orange;
-    text-align: center;
-    border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  color: orange;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .p-footer {

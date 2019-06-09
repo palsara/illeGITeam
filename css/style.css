@@ -187,18 +187,6 @@
     text-transform: uppercase;
 }
 
-.magyarFotok {
-    max-width: 300px;
-    max-height: 200px;
-    border-radius: 50px;
-    padding: 30px;
-}
-
-.magyarSzoveg {
-    width: 70%;
-    padding: 30px;
-}
-
 .h2zs {
     color: white;
     text-shadow: 0 0 15px black;
@@ -220,21 +208,26 @@
     width: 85%;
 }
 
+body header img {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(31, 56, 54);
+    margin: 0;
+}
+
 body nav a {
     padding-left: 50px;
     padding-right: 50px;
     line-height: 20px;
-    color: #f3b983;
+    color: #e78428;
     font-size: 25px;
     font-family: GoodTiming;
 }
 
 body nav a:hover {
     color: #fff;
-}
-
-body {
-    background-color: rgb(31, 56, 54);
 }
 
 #flag {
@@ -245,6 +238,14 @@ body {
     background-position: center;
     margin-top: 0px;
     padding-top: 0px;
+    font-family: Fengardo;
+}
+
+.magyarFotok {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 50px;
+    padding: 30px;
 }
 
 .cimSorHun {
@@ -252,9 +253,15 @@ body {
     padding-left: 20px;
 }
 
+.magyarSzoveg {
+    width: 70%;
+    padding: 30px;
+}
+
 .textHun {
     font-family: Fengardo;
     padding-left: 20px;
+    padding-right: 50px;
 }
 
 #magyarQuiz {

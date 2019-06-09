@@ -324,11 +324,11 @@ body nav a:hover {
 }
 
 .backgroundblack {
-    background-color: #660000;
+    background-image: url("/img/Blackbackground.jpg");
 }
 
 .textcolorblack {
-    color: #ff9966;
+    color: #ffffff;
 }
 
 .imgblack {

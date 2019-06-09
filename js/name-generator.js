@@ -7,9 +7,4 @@ function generator() {
     var fullName = monsterNames[randomNumber1] + adjectives[randomNumber2];
 
     alert(fullName);
-
-    //ha már kidobott egy nevet, azt kitörli
-    if (document.getElementById("result")) {
-        document.getElementById("placeholder").removeChild(document.getElementById("result"));
-    }
 }

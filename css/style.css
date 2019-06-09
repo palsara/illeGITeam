@@ -308,6 +308,8 @@ body nav a:hover {
 .p-footer {
     font-family: monospace;
     text-transform: uppercase;
+}
+
 .backgroundblack {
     background-color: #660000;
 }
@@ -324,7 +326,11 @@ body nav a:hover {
 .buttonblack {
     border-radius: 12px;
     padding: 12px 28px;
-    background-color: #471a81;
+    background-color: #e78428;
     font-size: 16px;
-    color: white;
+    color: #000000;
+}
+
+.textcolorindex {
+    color: #e78428;
 }

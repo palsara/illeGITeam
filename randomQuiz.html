@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="quizBackground">
     <h1 id="mainGreeter" class="title"></h1>
     <div id="mainContainer">
         <form id="randomQuiz" name="randomQuiz">
@@ -409,7 +409,10 @@
                     </div>
                 </div>
             </div>
-        </form id="randomQuiz" name="randomQuiz" vlass>
+            <div>
+                <button type="button" id="submitQuiz" onclick="determineResult();"></button>
+            </div>
+        </form id="randomQuiz" name="randomQuiz">
     </div>
     <script type="text/javascript" src="/js/randomQuiz.js"></script>
 </body>

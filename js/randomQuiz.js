@@ -1,4 +1,5 @@
 var title = "Introduction Quiz";
+var submitButtonText = "Befejezés és kiértékelés";
 var quizQuestions = [
   // Pictures
   [
@@ -202,6 +203,8 @@ document.getElementById("41").innerHTML = quizQuestions[4][0].false1;
 document.getElementById("45").innerHTML = quizQuestions[4][0].false2;
 document.getElementById("42").innerHTML = quizQuestions[4][0].false3;
 document.getElementById("44").innerHTML = quizQuestions[4][0].false4;
+// Submit button
+document.getElementById("submitQuiz").innerHTML = submitButtonText;
 // BEOLVASÁS VÉGE
 
 // VÁLTOZÓ TARTALMÚ CONTENT BEOLVASÁSA
@@ -213,7 +216,7 @@ for (var i = 1; i < quizQuestions.length; i++) {
     randomizeQuestionOrder(i, j);
   }
 }
-// Function declarations
+// Content Shuffle
 
 function randomizeQuestionOrder(questionBlock, questionNumber) {
   var labelID = "";
@@ -304,4 +307,62 @@ function writeContent(questionBlock, questionNumber, labelID) {
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
+}
+
+Submit section
+
+function determineResult() {
+  var pointsScored = 0;
+  pointsScored = countScore();
+  if(!checkMarcellusWallace){
+    alert("Az elért pontszámod:\n\n" + pointsScored);
+  } else {
+    determineEndResult(pointsScored);
+  }
+}
+
+function countScore(){
+  for(var i = 1; i < quizQuestions.length; i++){
+    for(var j = 0; j < quizQuestions[i].length; j++){
+      score += checkAnswer(i, j);
+    }
+}
+
+function checkAnswer(block, number){
+  var radioID= "";
+  radioID = radioID + block + "-" + number + "-";
+  labelID = "";
+  labelID = labelID + block + number;
+  for(var i = 1; i <= 5; i++){
+    var radioLabel = labelID + i;
+    var radioNumber = radioID + i;
+    if(document.getElementById(radioNumber).checked){
+      if(document.getElementById(radioLabel) == quizQuestions[block][number].answer) {
+        return 1;
+      }
+    }
+  }
+}
+
+function checkMarcellusWallace(score){
+  if(document.getElementById('4-1').checked ||
+     document.getElementById('4-2').checked ||
+     document.getElementById('4-3').checked ||
+     document.getElementById('4-4').checked ||
+     document.getElementById('4-5').checked ||)  {
+      return true;
+  }
+  return false;
+}
+
+function determineEndResult(score){
+  if(document.getElementById('4-1').checked ||
+     document.getElementById('4-5').checked ||){
+      alert('Vesztettél!\n\nSamuel L. Jackson golyót röpített beléd.');
+  } else if(document.getElementById('4-3').checked){
+      score *= 2;
+      alert('Az elért pontszámod:\n\n' + score);
+  } else {
+      alert('Az elért pontszámod:\n\n' + '0');
+  }
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
     <script src="/js/picker.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
     <header>
 
     </header>
-    <main>
+    <main class="rowFlex flexCenter">
         <div>
-            <h2>Mihez lenne kedved?</h2>
-            <p>Magyar v külföldi?</p>
+            <h2>Milyen filmhez lenne kedved?</h2>
+            <p>Magyar vagy külföldi?</p>
             <div>
                 <label for="magyar">Magyar</label>
                 <input type="radio" id="magyar" value="1" name="nyelv">
@@ -37,7 +38,7 @@
                 <label for="nscary">Nem</label>
                 <input type="radio" name="horror" id="nscary" value="0">
             </div>
-            <p>Vicces?</p>
+            <p>Esetleg viccesre?</p>
             <div>
                 <label for="funny">Igen</label>
                 <input type="radio" name="zs" id="funny" value="1">
@@ -47,10 +48,14 @@
                 <input type="radio" name="zs" id="nfunny" value="0">
             </div>
             <div id="movie">
-                Lássuk a medvét:
+
             </div>
             <div>
-                <button type="button" onclick="Picker();">Eredmény</button>
+                <button class="buttonblack" type="button"
+                    onclick="Picker();">Eredmény</button>
+            </div>
+            <div id="rr">
+
             </div>
         </div>
     </main>

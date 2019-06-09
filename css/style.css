@@ -9,50 +9,50 @@
     flexStart: balra zárt
     flexEnd: jobbra zárt
 */
-/* @font-face {
-    src: url(../fonts/good-timing.bold.ttf);
-    font-family: GoodTiming;
+@font-face {
+  src: url(../fonts/good-timing.bold.ttf);
+  font-family: GoodTiming;
 }
 
 @font-face {
-    src: url(../fonts/coinage-caps-kruger-gray.regular.ttf);
-    font-family: Kruger;
+  src: url(../fonts/coinage-caps-kruger-gray.regular.ttf);
+  font-family: Kruger;
 }
 
 @font-face {
-    src: url(../fonts/fengardo-neue.regular.ttf);
-    font-family: Fengardo;
+  src: url(../fonts/fengardo-neue.regular.ttf);
+  font-family: Fengardo;
 }
 
 .columnFlex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rowFlex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .flexSpaceAround {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .flexCenter {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flexSpaceBetween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flexFlexEnd {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .flexFlexStart {
-    justify-content: flex-start;
-} */
+  justify-content: flex-start;
+}
 
 /*
     randomQuiz.html-hez külön innen
@@ -75,9 +75,6 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 20px;
-}
-
-.quizQuestion {
 }
 
 .quizText {
@@ -136,8 +133,14 @@
   font-weight: bold;
   font-size: 24;
 }
+
 .quizBackground {
   background-color: #cdcdcd !important;
+}
+
+.submitButton {
+  height: 40px;
+  width: auto;
 }
 
 /*

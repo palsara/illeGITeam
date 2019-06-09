@@ -2,20 +2,15 @@ var title = "Introduction Quiz";
 var submitButtonText = "Befejezés és kiértékelés";
 var quizQuestions = [
   // Pictures
-  [
-    {
-      greeting: "Introduction Quiz",
-      musicPic: '<img src="/img/music.jpg" alt="Pink Floyd" class="Pic">',
-      sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones" class="Pic">',
-      moviesPic:
-        '<img src="/img/movies.jpg" alt="Quentin Tarantino" class="Pic">',
-      doublePic:
-        '<img src="/img/double.jpg" alt="Samuel L. Jackson" class="Pic">'
-    }
-  ],
+  [{
+    greeting: "Introduction Quiz",
+    musicPic: '<img src="/img/music.jpg" alt="Pink Floyd" class="Pic">',
+    sportsPic: '<img src="/img/sports.jpg" alt="Jon Jones" class="Pic">',
+    moviesPic: '<img src="/img/movies.jpg" alt="Quentin Tarantino" class="Pic">',
+    doublePic: '<img src="/img/double.jpg" alt="Samuel L. Jackson" class="Pic">'
+  }],
   // First question block
-  [
-    {
+  [{
       question: "Hogy hívják a Pink Floyd eredeti énekesét?",
       answer: "Syd Barrett"
     },
@@ -44,8 +39,7 @@ var quizQuestions = [
       false4: "Ivan Moody"
     },
     {
-      question:
-        "Melyik albumuk volt (az eladott lemezek száma alapján) a legsikeresebb?",
+      question: "Melyik albumuk volt (az eladott lemezek száma alapján) a legsikeresebb?",
       answer: "The Dark Side of the Moon",
       false1: "Wish You Were Here",
       false2: "The Division Bell",
@@ -54,14 +48,12 @@ var quizQuestions = [
     }
   ],
   // Second question block
-  [
-    {
+  [{
       question: "Ki jelenleg a világ legerősebb embere?",
       answer: "Hafthor Julius Bjornsson"
     },
     {
-      question:
-        "Ki tartja a felhúzás világrekordját erőemelő szabályrendszer szerint (472kg)?",
+      question: "Ki tartja a felhúzás világrekordját erőemelő szabályrendszer szerint (472kg)?",
       answer: "Benedikt Magnusson",
       false1: "Eddie Hall",
       false2: "Cailer Woolam",
@@ -77,8 +69,7 @@ var quizQuestions = [
       false4: "275kg"
     },
     {
-      question:
-        "Melyik harcművészeti stílus képviselője nyerte az 1., 2., és 3. UFC gálát?",
+      question: "Melyik harcművészeti stílus képviselője nyerte az 1., 2., és 3. UFC gálát?",
       answer: "Brazil Jiu-Jitsu",
       false1: "Aikido",
       false2: "Birkózás",
@@ -95,14 +86,12 @@ var quizQuestions = [
     }
   ],
   // Third question block
-  [
-    {
+  [{
       question: "Melyik híres rendező látható a mellékelt ábrán?",
       answer: "Quentin Tarantino"
     },
     {
-      question:
-        "Quentin Tarantino melyik filmjében nem játszott Samuel L. Jackson?",
+      question: "Quentin Tarantino melyik filmjében nem játszott Samuel L. Jackson?",
       answer: "Becstelen Brigantyk",
       false1: "Kill Bill Vol. 2",
       false2: "Ponyvaregény",
@@ -110,8 +99,7 @@ var quizQuestions = [
       false4: "Aljas Nyolcas"
     },
     {
-      question:
-        'Miért vette le Minnie Mink a "Mexikóiaknak és kutyáknak belépni tilos?" táblát a boltja ajtajáról, az Aljas Nyolcas c. filmben?',
+      question: 'Miért vette le Minnie Mink a "Mexikóiaknak és kutyáknak belépni tilos?" táblát a boltja ajtajáról, az Aljas Nyolcas c. filmben?',
       answer: "Mert megkegyelmezett a kutyáknak",
       false1: "Hogy a hóvihar ne fújja el",
       false2: "Mert szétlőtték az ajtót a film időrendi elején",
@@ -119,8 +107,7 @@ var quizQuestions = [
       false4: "Nem vette le"
     },
     {
-      question:
-        "Melyik metálegyüttes nevét ihlette a Kill Bill című film egyik eleme?",
+      question: "Melyik metálegyüttes nevét ihlette a Kill Bill című film egyik eleme?",
       answer: "Five Finger Death Punch",
       false1: "Stone Sour",
       false2: "Amon Amarth",
@@ -128,8 +115,7 @@ var quizQuestions = [
       false4: "Cradle of Filth"
     },
     {
-      question:
-        'Melyik híres kultista szerepel az idén megjelenő "Once Upon a Time in Hollywood" c. filmben?',
+      question: 'Melyik híres kultista szerepel az idén megjelenő "Once Upon a Time in Hollywood" c. filmben?',
       answer: "Charles Manson",
       false1: "Anders Breivik",
       false2: "Shoko Asahara",
@@ -138,16 +124,14 @@ var quizQuestions = [
     }
   ],
   // Fourth question block
-  [
-    {
-      question: "Marcellus Wallace hogy néz ki?",
-      answer: "Kopasz, fekete",
-      false1: "Mint egy p*c$@",
-      false2: "Hogy mi?",
-      false3: "Nyakkendős középkorú férfi, heggel a bal arcán",
-      false4: "Nem tudni"
-    }
-  ]
+  [{
+    question: "Marcellus Wallace hogy néz ki?",
+    answer: "Kopasz, fekete",
+    false1: "Mint egy p*c$@",
+    false2: "Hogy mi?",
+    false3: "Nyakkendős középkorú férfi, heggel a bal arcán",
+    false4: "Nem tudni"
+  }]
 ];
 // NEM VÁLTOZÓ SORRENDŰ CONTENT BEOLVASÁSA
 // Tite
@@ -229,38 +213,19 @@ function randomizeQuestionOrder(questionBlock, questionNumber) {
 }
 
 function writeContent(questionBlock, questionNumber, labelID) {
-  // .length = 6
   var objectKeys = Object.keys(quizQuestions[questionBlock][questionNumber]);
   console.log("5 Object keys in full: " + objectKeys);
-  // .length = 5
   objectKeys.splice(0, 1);
   console.log("6 objectKeys after splice: " + objectKeys);
   var index = [1, 2, 3, 4, 5];
-  // index.length = 5
   var iterator = 0;
   while (index.length > 0) {
     var tmp = getRandomNumber(1, objectKeys.length + 1);
     console.log("7 tmp: " + tmp);
     if (index.includes(tmp)) {
-      // between 0 and 4
-      // index.splice(index.indexOf(tmp + 1), 1);
       console.log("8 Index array: " + index);
-      // between 1 and 5
-      // var index = tmp + 1;
-      // console.log("index:" + index);
       var tmpLabelID = "";
-      // console.log("9 tmpLabelID type: " + typeof tmpLabelID);
-      // tmp++;
-      // console.log("10 type of tmp: " + typeof tmp);
-      // console.log("11 value of tmp: " + tmp);
       tmpLabelID = labelID + index[index.indexOf(tmp)];
-      // tmpLabelID = labelID + index[tmp].toString();
-      // console.log("12 typeof tmp: " + typeof tmp);
-      // console.log("13 typeof tmpLabelID: " + typeof tmpLabelID);
-      // tmp--;
-      // console.log("14 value of tmp: " + tmp);
-      // console.log("LabelID after index: " + tmpLabelID);
-      // console.log("15 objectKeys[tmp] value: " + objectKeys[tmp]);
       console.log("16 tmpLabelID : " + tmpLabelID);
       switch (iterator) {
         case 0:
@@ -309,60 +274,87 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-Submit section
+// Submit section
 
 function determineResult() {
   var pointsScored = 0;
   pointsScored = countScore();
-  if(!checkMarcellusWallace){
+  if (!checkMarcellusWallace()) {
     alert("Az elért pontszámod:\n\n" + pointsScored);
   } else {
     determineEndResult(pointsScored);
   }
 }
 
-function countScore(){
-  for(var i = 1; i < quizQuestions.length; i++){
-    for(var j = 0; j < quizQuestions[i].length; j++){
+function countScore() {
+  var score = 0;
+  for (var i = 1; i < quizQuestions.length; i++) {
+    for (var j = 1; j < quizQuestions[i].length; j++) {
       score += checkAnswer(i, j);
     }
+  }
+  score += checkTextAnswer();
+  return score;
 }
 
-function checkAnswer(block, number){
-  var radioID= "";
+function checkAnswer(block, number) {
+  var radioID = "";
   radioID = radioID + block + "-" + number + "-";
-  labelID = "";
+  var labelID = "";
   labelID = labelID + block + number;
-  for(var i = 1; i <= 5; i++){
-    var radioLabel = labelID + i;
-    var radioNumber = radioID + i;
-    if(document.getElementById(radioNumber).checked){
-      if(document.getElementById(radioLabel) == quizQuestions[block][number].answer) {
+  for (var i = 1; i <= 5; i++) {
+    var radioLabel = "";
+    var radioNumber = "";
+    radioLabel = labelID + i;
+    radioNumber = radioID + i;
+    if (document.getElementById(radioNumber).checked) {
+      if (document.getElementById(radioLabel).innerHTML == quizQuestions[block][number].answer) {
         return 1;
       }
     }
   }
+  return 0;
 }
 
-function checkMarcellusWallace(score){
-  if(document.getElementById('4-1').checked ||
-     document.getElementById('4-2').checked ||
-     document.getElementById('4-3').checked ||
-     document.getElementById('4-4').checked ||
-     document.getElementById('4-5').checked ||)  {
-      return true;
+function checkTextAnswer() {
+  var textScore = 0;
+  var answer1 = "";
+  var answer2 = "";
+  var answer3 = "";
+  answer1 = quizQuestions[1][0].answer;
+  answer2 = quizQuestions[2][0].answer;
+  answer3 = quizQuestions[3][0].answer;
+  if (answer1 == document.getElementById('singerNameAnswer').value) {
+    textScore += 2;
+  }
+  if (answer2 == document.getElementById('strongManAnswer').value) {
+    textScore += 2;
+  }
+  if (answer3 == document.getElementById('directorAnswer').value) {
+    textScore += 2;
+  }
+  return textScore;
+}
+
+function checkMarcellusWallace(score) {
+  if (document.getElementById('4-1').checked ||
+    document.getElementById('4-2').checked ||
+    document.getElementById('4-3').checked ||
+    document.getElementById('4-4').checked ||
+    document.getElementById('4-5').checked) {
+    return true;
   }
   return false;
 }
 
-function determineEndResult(score){
-  if(document.getElementById('4-1').checked ||
-     document.getElementById('4-5').checked ||){
-      alert('Vesztettél!\n\nSamuel L. Jackson golyót röpített beléd.');
-  } else if(document.getElementById('4-3').checked){
-      score *= 2;
-      alert('Az elért pontszámod:\n\n' + score);
+function determineEndResult(score) {
+  if (document.getElementById('4-1').checked ||
+    document.getElementById('4-5').checked == true) {
+    alert('Vesztettél!\n\nSamuel L. Jackson golyót röpített beléd.');
+  } else if (document.getElementById('4-3').checked == true) {
+    score *= 2;
+    alert('Az elért pontszámod:\n\n' + score);
   } else {
-      alert('Az elért pontszámod:\n\n' + '0');
+    alert('Az elért pontszámod:\n\n' + '0');
   }
 }

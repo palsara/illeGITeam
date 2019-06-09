@@ -9,6 +9,11 @@
     flexStart: balra zárt
     flexEnd: jobbra zárt
 */
+@font-face {
+    src: url(../fonts/good-timing.bold.ttf);
+    font-family: GoodTiming;
+}
+
 .columnFlex {
     display: flex;
     flex-direction: column;
@@ -47,21 +52,23 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .quizBlock {
     display: flex;
     flex-direction: column;
     margin: 30px;
     width: 95%;
 }
+
 .quizRow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 20px;
 }
-.quizQuestion {
 
-}
+.quizQuestion {}
+
 .quizText {
     display: block;
     margin-right: auto;
@@ -70,44 +77,55 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .quizSpan {
     font-weight: bold;
     margin: 10px;
 }
+
 .quizElement {
     width: 35%;
 }
+
 .quizRadio {
     margin-left: auto;
     margin-right: auto;
 }
+
 .quizColumn {
     dispay: flex;
     flex-direction: column;
 }
+
 .Pic {
     border-radius: 20px;
     height: 700px;
     width: auto;
 }
+
 #doubleFirstRow {
     display: flex;
     justify-content: column;
 }
+
 .textLabel {
     text-align: center;
 }
+
 .textInput {
-    width: 100%;   
+    width: 100%;
 }
+
 #marcellusWallace {
     text-align: center;
 }
+
 .title {
     text-align: center;
     font-weight: bold;
     font-size: 24;
 }
+
 /*
     randomQuiz.html-hez küldön idáig
 */
@@ -192,16 +210,23 @@
 }
 
 body nav a {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 20px;
-    color: #8e9aaa;
+    color: #f3b983;
     font-size: 25px;
-}
-
-body nav a :hover {
-    color: darkcyan;
+    font-family: GoodTiming;
 }
 
 body {
-    background-color: burlywood;
+    background-color: rgb(31, 56, 54);
+}
+
+.flag {
+    background-image: url(/img/flag.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0px;
+    padding-top: 0px;
 }

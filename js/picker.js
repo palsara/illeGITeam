@@ -7,28 +7,25 @@ function Picker() {
     var funny = isfunny.checked;
 
     if (magyar == 1) {
-        var btn = document.createElement('a');
-        btn.href = "https://www.google.com/"
+        var btn = document.createElement('p');
         btn.innerHTML = "Magyar";
-        document.body.appendChild(btn);
+        document.getElementById("picker").appendChild(btn);
+
     } else {
         if (scary == 1) {
-            var btn = document.createElement('a');
-            btn.href = "https://www.google.com/"
+            var btn = document.createElement('p');
             btn.innerHTML = "Horror";
-            document.body.appendChild(btn);
+            document.getElementById("picker").appendChild(btn);
 
         } else {
             if (funny == 1) {
-                var btn = document.createElement('a');
-                btn.href = "https://www.google.com/"
-                btn.innerHTML = "Zs";
-                document.body.appendChild(btn);
+                var btn = document.createElement('p');
+                btn.innerHTML = "Zs kategóriás film";
+                document.getElementById("picker").appendChild(btn);
             } else {
-                var btn = document.createElement('a');
-                btn.href = "https://www.google.com/"
-                btn.innerHTML = "SciFi";
-                document.body.appendChild(btn);
+                var btn = document.createElement('p');
+                btn.innerHTML = "Sci-fi";
+                document.getElementById("picker").appendChild(btn);
             }
         }
     }

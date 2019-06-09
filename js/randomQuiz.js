@@ -214,32 +214,25 @@ function randomizeQuestionOrder(questionBlock, questionNumber) {
 
 function writeContent(questionBlock, questionNumber, labelID) {
   var objectKeys = Object.keys(quizQuestions[questionBlock][questionNumber]);
-  console.log("5 Object keys in full: " + objectKeys);
   objectKeys.splice(0, 1);
-  console.log("6 objectKeys after splice: " + objectKeys);
   var index = [1, 2, 3, 4, 5];
   var iterator = 0;
   while (index.length > 0) {
     var tmp = getRandomNumber(1, objectKeys.length + 1);
-    console.log("7 tmp: " + tmp);
     if (index.includes(tmp)) {
-      console.log("8 Index array: " + index);
       var tmpLabelID = "";
       tmpLabelID = labelID + index[index.indexOf(tmp)];
-      console.log("16 tmpLabelID : " + tmpLabelID);
       switch (iterator) {
         case 0:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].answer;
           index.splice(index.indexOf(tmp), 1);
           iterator++;
-          console.log("17 index value: " + index);
           break;
         case 1:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false1;
           index.splice(index.indexOf(tmp), 1);
-          console.log("17 index value: " + index);
           iterator++;
           break;
         case 2:
@@ -247,21 +240,18 @@ function writeContent(questionBlock, questionNumber, labelID) {
             quizQuestions[questionBlock][questionNumber].false2;
           index.splice(index.indexOf(tmp), 1);
           iterator++;
-          console.log("17 index value: " + index);
           break;
         case 3:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false3;
           index.splice(index.indexOf(tmp), 1);
           iterator++;
-          console.log("17 index value: " + index);
           break;
         case 4:
           document.getElementById(tmpLabelID).innerHTML =
             quizQuestions[questionBlock][questionNumber].false4;
           index.splice(index.indexOf(tmp), 1);
           iterator++;
-          console.log("17 index value: " + index);
           break;
       }
     } else {

@@ -230,6 +230,13 @@ body {
   margin: 0;
 }
 
+.illeGITeamNav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 body nav a {
   padding-left: 50px;
   padding-right: 50px;

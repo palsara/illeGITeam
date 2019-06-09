@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="textHun">
+<body class="textHun" id="flag">
     <h1 class="cimSorHun">Modern magyar filmek</h1>
     <h2 class="cimSorHun">Nehéz kezdetek</h2>
-    <div style="padding-right: 70px">
+    <div class="textHun" style="padding-right:50px">
         <p>A magyar film/mozi története 1896-ban vette kezdetét: a Lumière testvérek filmjeit 1896. május 10-én
             vetítették a
             Royal Szálló kávéházában. Megnyitották az első magyar filmszínházat, az Ikonográfot, ahol francia gépeken
@@ -63,7 +63,7 @@
         </div>
         <div class="columnFlex">
             <a href="https://port.hu/adatlap/film/tv/liza-a-rokatunder-liza-a-rokatunder/movie-152275">
-                <img src="/img/liza.jpg" alt="liza" class="magyarFotok">
+                <img src="/img/liza.png" alt="liza" class="magyarFotok">
             </a>
         </div>
     </div>
@@ -117,7 +117,7 @@
         <div class="columnFlex">
             <a
                 href="https://port.hu/adatlap/film/mozi/testrol-es-lelekrol--testrol-es-lelekrol/movie-174216?section=mozi&title=testrol-es-lelekrol-testrol-es-lelekrol&id=movie-174216">
-                <img src="/img/testrol.jpg" alt="testrol és lélekrol" class="magyarFotok">
+                <img src="/img/testrol.png" alt="testrol és lélekrol" class="magyarFotok">
             </a>
         </div>
         <div class="columnFlex; magyarSzoveg">
@@ -169,67 +169,93 @@
             </a>
         </div>
     </div>
-    <h2 class="cimSorHun">QUIZ</h2>
-    <ol>
-        <li>
-            <h4>Milyen állatról szól a Kincsem című film?</h4>
-            <input type="radio" name="animal" id="giraffe" value="0">
-            <label for="giraffe">Zsiráf</label>
-            <input type="radio" name="animal" id="penguin" value="0">
-            <label for="penguin">Pingvin</label>
-            <input type="radio" name="animal" id="horse" value="1">
-            <label for="horse">Paci</label>
-            <input type="radio" name="animal" id="seal" value="0">
-            <label for="seal">Fóka</label>
-        </li>
-        <li>
-            <h4>Milyen díjat nyert a Saul fia?</h4>
-            <input type="radio" name="award" id="oscar" value="1">
-            <label for="oscar">Oscar</label>
-            <input type="radio" name="award" id="goldenGlobe" value="0">
-            <label for="goldenGlobe">Golden Globe</label>
-            <input type="radio" name="award" id="ariel" value="0">
-            <label for="ariel">Ariel</label>
-            <input type="radio" name="award" id="aranyMalna" value="0">
-            <label for="aranyMalna">Arany málna</label>
-        </li>
-        <li>
-            <h4>Milyük volt közös a főszereplőknek a Testről és lélekről című film főszereplőinek?</h4>
-            <input type="radio" name="common" id="mom" value="0">
-            <label for="mom">Anyukájuk</label>
-            <input type="radio" name="common" id="vd" value="0">
-            <label for="vd">Nemi betegségük</label>
-            <input type="radio" name="common" id="religion" value="0">
-            <label for="religion">Vallásuk</label>
-            <input type="radio" name="common" id="dream" value="1">
-            <label for="dream">Álmuk</label>
-        </li>
-        <li>
-            <h4>Ki volt Tomy Tani?</h4>
-            <input type="radio" name="whoWas" id="activist" value="0">
-            <label for="activist">Környezetvédő aktivista</label>
-            <input type="radio" name="whoWas" id="singer" value="1">
-            <label for="singer">Japán slágerénekes</label>
-            <input type="radio" name="whoWas" id="pirate" value="0">
-            <label for="pirate">Kalóz</label>
-            <input type="radio" name="whoWas" id="buddhist" value="0">
-            <label for="buddhist">Buddhista szerzetes</label>
-        </li>
-        <li>
-            <h4>Miben ül Zolika?</h4>
-            <input type="radio" name="sit" id="car" value="0">
-            <label for="car">Autóban</label>
-            <input type="radio" name="sit" id="puddle" value="0">
-            <label for="puddle">Pocsojában</label>
-            <input type="radio" name="sit" id="spaceShip" value="0">
-            <label for="spaceShip">Űrhajóban</label>
-            <input type="radio" name="sit" id="wheelChair" value="1">
-            <label for="wheelChair">Kerekesszékben</label>
-        </li>
-
-    </ol>
     <div>
-        <button type="button" onclick="evaluation();" style="padding:10px; border-radius:5px; margin:20px">
+        <div class="cimSorHun">
+            <h2>Magyarországon forgatott filmek</h2>
+            <h4>
+                <a href="https://www.origo.hu/itthon/20180626-magyar-filmgyartas-andy-vajna.html" style="color: khaki">
+                    Egyre több amerikai filmet forgatnak nálunk
+                </a>
+            </h4>
+        </div>
+        <div class="textHun">
+            <ul>
+                <li>Mentőexpedíció</li>
+                <li>A kém</li>
+                <li>Vörös veréb</li>
+                <li>47 ronin</li>
+                <li>Z világháború</li>
+                <li>Szárnyas fejvadász 2049</li>
+                <li>A kém, aki dobott engem</li>
+                <li>A sas</li>
+                <li>Inferno</li>
+                <li>Die Hard - Drágább, mint az életed</li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="cimSorHun">QUIZ</h2>
+    <div id="magyarQuiz">
+        <ol>
+            <li>
+                <h4>Milyen állatról szól a Kincsem című film?</h4>
+                <input type="radio" name="animal" id="giraffe" value="0">
+                <label for="giraffe">Zsiráf</label>
+                <input type="radio" name="animal" id="penguin" value="0">
+                <label for="penguin">Pingvin</label>
+                <input type="radio" name="animal" id="horse" value="1">
+                <label for="horse">Paci</label>
+                <input type="radio" name="animal" id="seal" value="0">
+                <label for="seal">Fóka</label>
+            </li>
+            <li>
+                <h4>Milyen díjat nyert a Saul fia?</h4>
+                <input type="radio" name="award" id="oscar" value="1">
+                <label for="oscar">Oscar</label>
+                <input type="radio" name="award" id="goldenGlobe" value="0">
+                <label for="goldenGlobe">Golden Globe</label>
+                <input type="radio" name="award" id="ariel" value="0">
+                <label for="ariel">Ariel</label>
+                <input type="radio" name="award" id="aranyMalna" value="0">
+                <label for="aranyMalna">Arany málna</label>
+            </li>
+            <li>
+                <h4>Milyük volt közös a főszereplőknek a Testről és lélekről című film főszereplőinek?</h4>
+                <input type="radio" name="common" id="mom" value="0">
+                <label for="mom">Anyukájuk</label>
+                <input type="radio" name="common" id="vd" value="0">
+                <label for="vd">Nemi betegségük</label>
+                <input type="radio" name="common" id="religion" value="0">
+                <label for="religion">Vallásuk</label>
+                <input type="radio" name="common" id="dream" value="1">
+                <label for="dream">Álmuk</label>
+            </li>
+            <li>
+                <h4>Ki volt Tomy Tani?</h4>
+                <input type="radio" name="whoWas" id="activist" value="0">
+                <label for="activist">Környezetvédő aktivista</label>
+                <input type="radio" name="whoWas" id="singer" value="1">
+                <label for="singer">Japán slágerénekes</label>
+                <input type="radio" name="whoWas" id="pirate" value="0">
+                <label for="pirate">Kalóz</label>
+                <input type="radio" name="whoWas" id="buddhist" value="0">
+                <label for="buddhist">Buddhista szerzetes</label>
+            </li>
+            <li>
+                <h4>Miben ül Zolika?</h4>
+                <input type="radio" name="sit" id="car" value="0">
+                <label for="car">Autóban</label>
+                <input type="radio" name="sit" id="puddle" value="0">
+                <label for="puddle">Pocsojában</label>
+                <input type="radio" name="sit" id="spaceShip" value="0">
+                <label for="spaceShip">Űrhajóban</label>
+                <input type="radio" name="sit" id="wheelChair" value="1">
+                <label for="wheelChair">Kerekesszékben</label>
+            </li>
+
+        </ol>
+    </div>
+    <div>
+        <button type="button" onclick="evaluation();" id="smartEH" style="padding:10px; border-radius:5px; margin:20px">
             <b>Ügyes vagyok?</b>
             <img src="/img/smart.png" alt="Okos vagy e?" style="max-height:25px">
         </button>

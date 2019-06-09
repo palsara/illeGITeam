@@ -237,8 +237,9 @@ body {
     background-color: rgb(31, 56, 54);
 }
 
-.flag {
-    background-image: url(/img/flag.jpg);
+#flag {
+    background-image: url(/img/flag.png);
+    background-color: rgb(197, 204, 202);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -248,9 +249,20 @@ body {
 
 .cimSorHun {
     font-family: Kruger;
+    padding-left: 20px;
 }
 
 .textHun {
     font-family: Fengardo;
+    padding-left: 20px;
 }
 
+#magyarQuiz {
+    padding-left: 20px;
+}
+
+#smartEH {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}

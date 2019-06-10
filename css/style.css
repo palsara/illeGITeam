@@ -250,22 +250,26 @@ body nav a:hover {
   color: #fff;
 }
 
-#flag {
-  background-image: url(/img/flag.png);
-  background-color: rgb(197, 204, 202);
+#roll {
+  background-image: url(/img/roll.png);
+  background-color: rgb(140, 146, 144);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  margin-top: 0px;
-  padding-top: 0px;
+  background-size: 100%;
   font-family: Fengardo;
+  color: #e78428;
+}
+
+#mainHun {
+  padding: 50px;
 }
 
 .magyarFotok {
   max-width: 300px;
   max-height: 200px;
   border-radius: 50px;
-  padding: 30px;
+  margin: 50px;
 }
 
 .cimSorHun {
@@ -276,22 +280,34 @@ body nav a:hover {
 .magyarSzoveg {
   width: 70%;
   padding: 30px;
+  font-size: 15pt;
 }
 
 .textHun {
   font-family: Fengardo;
   padding-left: 20px;
   padding-right: 50px;
+  font-size: 15pt;
 }
 
 #magyarQuiz {
+  background-image: url(/img/quizbackground.png);
+  background-color: #e78428;
+  background-size: 100%;
   padding-left: 20px;
+  font-size: 15pt;
+  border: 0;
+  color: #000000;
 }
 
 #smartEH {
-  padding: 10px;
   border-radius: 5px;
   margin: 20px;
+}
+
+.camera {
+  width: 30px;
+  opacity: 0.8;
 }
 
 .image-footer {
@@ -319,31 +335,31 @@ body nav a:hover {
 }
 
 .p-footer {
-    font-family: monospace;
-    text-transform: uppercase;
+  font-family: monospace;
+  text-transform: uppercase;
 }
 
 .backgroundblack {
-    background-image: url("/img/Blackbackground.jpg");
+  background-image: url("/img/Blackbackground.jpg");
 }
 
 .textcolorblack {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .imgblack {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .buttonblack {
-    border-radius: 12px;
-    padding: 12px 28px;
-    background-color: #e78428;
-    font-size: 16px;
-    color: #000000;
+  border-radius: 12px;
+  padding: 12px 28px;
+  background-color: #e78428;
+  font-size: 16px;
+  color: #000000;
 }
 
 .textcolorindex {
-    color: #e78428;
+  color: #e78428;
 }

@@ -1,4 +1,3 @@
-var title = "Introduction Quiz";
 var submitButtonText = "Befejezés és kiértékelés";
 var quizQuestions = [
   // Pictures
@@ -134,10 +133,6 @@ var quizQuestions = [
   }]
 ];
 // NEM VÁLTOZÓ SORRENDŰ CONTENT BEOLVASÁSA
-// Tite
-document.querySelector("#pageTitle").innerHTML = title;
-// h1 element
-document.querySelector("#mainGreeter").innerHTML = quizQuestions[0][0].greeting;
 // section pictures
 document.querySelector("#musicPic").innerHTML = quizQuestions[0][0].musicPic;
 document.querySelector("#sportsPic").innerHTML = quizQuestions[0][0].sportsPic;
